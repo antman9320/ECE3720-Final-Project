@@ -4,8 +4,9 @@ ECE 3720 Final Project
 
 **Group members:** Anthony Putrus, Mario Ivezaj, Justin Aquilina, David Hurlbert
 
-# Link to Google Doc containing notes/ideas/project updates for the project
-(https://docs.google.com/document/d/1CXY0ckCbr0uh1d2bbIugTZ3-Kkri9Xm0IxcwYGNHimU/edit?usp=sharing)
+### Link's to Google Doc's
+- Notes/ideas ----> (https://docs.google.com/document/d/1CXY0ckCbr0uh1d2bbIugTZ3-Kkri9Xm0IxcwYGNHimU/edit?usp=sharing)
+- Status Report ----> (https://docs.google.com/document/d/1IT9ALkAubmx2YQJg4QNXKdJEr5QOwmcFIZtEcxEPNfI/edit?usp=sharing)
 
 
 ## Car motion and signal outputs (Mario Ivezaj)
