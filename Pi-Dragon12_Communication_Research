@@ -1,0 +1,38 @@
+# Research: Pi <----> Dragon12 Communication Methods
+
+**Author:** Justin Aquilina
+**Date:** 11/8/2026
+
+
+## Overview
+For our project since we are using the Raspberry Pi with a camera to detect vehicles in the intersection which will then need to send a signal to the Dragon12 to notify the Dragon12 to change the traffic light states appropriately. We need a way to properly send bits of data from the Pi to the Dragon12.
+Raspberry Pi detects car waiting at traffic light ---> send data that car/cars are detected to Dragon12 ---> Dragon12 decides what to do next
+
+
+## Method #1 (using TX/RX pins directly)
+- The Pi runs on 3.3V logic and the Dragon12 runs on 5V logic.
+- Therefore if we are going to use the TX/RX pins for UART we have to use a logic level shifter (Bi-Directional)
+- using this method we will probably have to have two power supplies 1 for Pi and 1 for Dragon12 sharing same GND
+- Types of Logic Level shifters we may use are the TXS0108E or similar
+
+
+## Method #2 using USB ports (USB-A to micro USB) As of right now I am not sure if this is a verified method we can use for our setup (not tested)
+- The Pi 5 has 4 USB-A ports we can use one of these ports to transmit data
+- The Dragon12 has a Micro USB port we can use to send/recieve data
+- using this method we will have 1 power supply going to the Pi, then through the USB cable the Dragon12 will be powered 
+- for this method we have to be careful. Can the Pi USB-A supply enough current to the Dragon12? can the single power supply power all of the electronics? (Pi, Dragon12, LEDs, Camera, motors...)
+- As of right now I am not 100% sure if method #2 is a valid way to communicate between the Pi and Dragon12, because I could not find anything on the internet of someone doing this exact setup, it should work in principle
+- I did however find a video of someone communicating to a board (not the Dragon12) through USB-A on the Pi (Linked below in refernces)
+
+
+
+
+
+## References for Method #1
+- how UART works ---> (https://youtu.be/V6m2skVlsQI)
+- how to use a Logic Level Shifter ---> (https://youtu.be/f7aySy_0URE)
+
+
+## References for Method #2
+- how to communicate to another board using the USB-A on the Pi ---> (https://youtu.be/9KGRz8R1Lls)
+
