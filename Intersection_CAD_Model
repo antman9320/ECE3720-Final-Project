@@ -1,0 +1,12 @@
+## I included a link below to allow anyone to access the CAD model design of the intersection
+
+
+**Author:** Justin Aquilina
+**Date:** 11/9/2026
+
+#### Changes that need to be made
+- increase hight of top shelf by about ~ 3" to 5" so that camera FOV can fit the whole intersection in 1 frame
+- we need to figure out how the LEDs are going to be mounted on the model (total of 12 LEDs)
+- I am not sure if the top shelf is large enough to fit the Pi and Dragon12, we may need to add a secondary top shelf
+
+Link to CAD model ---> (https://a360.co/4emT0JF)
