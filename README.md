@@ -70,4 +70,22 @@ https://docs.edgeimpulse.com/hardware/boards/raspberry-pi-5
 - C++ Library Edge Impulse Documentation: Information on how to use C++ library outputted from edge impulse 
 https://docs.edgeimpulse.com/hardware/deployments/run-cpp-overview
 
+## CAD Traffic Intersection Design and Pi to Dragon12 Communication Research (Justin Aquilina)
+
+solid structure to mount electronics on + model intersection for cars to drive on,
+camera mounted on the top. Researched 2 different potential methods to communicate between Pi and Dragon12, using UART.
+
+Files: Fusion CAD model ---> (https://a360.co/4emT0JF)
+
+### Notes
+The CAD model is just about done, giving us a good base for the project.
+The first method to communicate between boards is UART connecting TX/RX pins on both boards,
+Using a Logic Level Shifter. The second method technically is not UART, using the Pi's USB to the Dragon12's USB to communicate 
+Method 2 uses less components while Method 1 may be a better long term solution.
+
+### References:
+- TXS0108E Level Shifter datasheet
+https://www.ti.com/lit/ds/symlink/txs0108e.pdf?ts=1794207939823
+- how to use a Logic Level Shifter
+https://youtu.be/f7aySy_0URE
 
