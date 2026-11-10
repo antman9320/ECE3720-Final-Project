@@ -40,3 +40,34 @@ motor.c/.h, car_motion.c/.h, signal_seq.c/.h, main.c
 - MicroDigitalEd, DC Motor Control H-Bridge sample program: H-bridge pin
   mapping and PWM settings (motor.c)
 - NXP AN2882, Using Real-Time Interrupt on HCS12: RTI setting (clock.c)
+
+## Object Detection and UART Transmission (David Hurlbert)
+
+Implement computer vision techniques to detect 1 or more cars waiting at
+the side street part of the intersection. Transmit camera data to HCS12
+via UART.
+
+Files: Raspberry Pi 5 Terminal Communication, cardet1-cpp-mcu-v2-impulse-#1.zip
+
+### Hardware other than the Dragon12 (this subsystem)
+- Raspberry Pi 5
+- Raspberry Pi 5 Camera Module 3
+
+### Board setup
+- Connect mouse, keyboard, and monitor via USB and HDMI (for demo)
+- Connect Pi Camera Module 3 to CAM/DISP 1
+- Power with 5v USB-C Power Supply
+
+### Demo controls
+- Enter "edge-impulse-linux" in terminal to connect to machine learning dataset
+- Enter "edge-impulse-linux-runner" to view camera data in real time
+
+### References
+- Raspberry Pi 5 Camera Module 3 Datasheet: Obtained specifications on Camera Module 3 and how to setup with Pi properly 
+https://pip-assets.raspberrypi.com/categories/786-raspberry-pi-camera-module3/documents/RP-008151-DS-1-camera-module-3-product-brief.pdf
+- Raspberry Pi 5 Edge Impulse Documentation: Explained how to setup RPI 5 to work with edge impulse, listed required terminal commands
+https://docs.edgeimpulse.com/hardware/boards/raspberry-pi-5 
+- C++ Library Edge Impulse Documentation: Information on how to use C++ library outputted from edge impulse 
+https://docs.edgeimpulse.com/hardware/deployments/run-cpp-overview
+
+
