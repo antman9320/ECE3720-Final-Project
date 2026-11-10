@@ -1,0 +1,15 @@
+// INSTALL THESE TO USE RPI5 AND CAM MODULE IN EDGE IMPULSE
+sudo apt update
+curl -sL https://deb.nodesource.com/setup_20.x | sudo bash -
+sudo apt install -y gcc g++ make build-essential nodejs sox gstreamer1.0-tools gstreamer1.0-plugins-good gstreamer1.0-plugins-base gstreamer1.0-plugins-base-apps
+sudo npm install edge-impulse-linux -g --unsafe-perm
+
+sudo npm install -g npm@10.8.1
+sudo apt install gstreamer1.0-libcamera
+sudo raspi-config
+
+// ONCE INSTALLED USE THESE
+rpicam-hello -t 5000 // camera preview for 5 seconds
+edge-impulse-linux // connects rpi5 cam to edge impulse
+edge-impulse-linux --clean // disconnects from previous edge impulse project, lets you connect to a new one
+edge-impulse-linux-runner // displays live object detection feed (output of machine learning program)
